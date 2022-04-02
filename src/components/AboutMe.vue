@@ -1,10 +1,14 @@
 <template>
-  <div class="max-w-[1000px] mx-auto" id="about">
+  <div
+    class="wow flipInX max-w-[1000px] mx-auto"
+    data-wow-offset="100"
+    id="about"
+  >
     <div class="text-[#60FFD9] text-4xl mb-24">About Me</div>
     <div class="flex flex-wrap flex-row">
       <div
         v-for="(item, index) in list"
-        :key="index"
+        :key="`list${index}`"
         class="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4 mb-10 px-2"
       >
         <span
@@ -22,7 +26,7 @@
       <ProgressBar
         class="mb-5"
         v-for="(item, i) in progressList"
-        :key="i"
+        :key="`progress${i}`"
         :title="item.title"
         :percentage="item.percentage"
       />
@@ -32,12 +36,23 @@
 </template>
 
 <script>
+import { WOW } from "wowjs";
 import ProgressBar from "@/components/ProgressBar";
 export default {
   name: "AboutMe",
   components: {
     ProgressBar,
   },
+  mounted() {
+    const wow = new WOW({
+      // 距离可视区域多少开始执行动画
+
+      // 异步加载的内容是否有效
+      live: false,
+    });
+    wow.init();
+  },
+
   data() {
     return {
       list: [
