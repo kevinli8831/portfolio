@@ -19,15 +19,25 @@
           {{ item.text }}
         </span>
       </div>
-
+      <ProgressBar
+        class="mb-5"
+        v-for="(item, i) in progressList"
+        :key="i"
+        :title="item.title"
+        :percentage="item.percentage"
+      />
       <!-- Filled -->
     </div>
   </div>
 </template>
 
 <script>
+import ProgressBar from "@/components/ProgressBar";
 export default {
   name: "AboutMe",
+  components: {
+    ProgressBar,
+  },
   data() {
     return {
       list: [
@@ -51,6 +61,17 @@ export default {
           icon: "phonelink",
           title: "Responsive",
         },
+      ],
+      progressList: [
+        { title: "HTML", percentage: 80 },
+        { title: "CSS", percentage: 70 },
+        { title: "JavaScript", percentage: 80 },
+        { title: "Vue", percentage: 80 },
+        { title: "React", percentage: 40 },
+        { title: "TailWind CSS", percentage: 60 },
+        { title: "NodeJs", percentage: 50 },
+        { title: "Express", percentage: 40 },
+        { title: "MongoDB", percentage: 35 },
       ],
     };
   },

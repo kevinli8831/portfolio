@@ -8739,6 +8739,14 @@
   "resolved" "https://registry.npmjs.org/vue/-/vue-2.6.14.tgz"
   "version" "2.6.14"
 
+"vue2-progress-bar@^0.1.1":
+  "integrity" "sha512-c/YWbGSYq18YAEPBZW3nMVGX6pAC2/5s4BWzjvudkNMFNPaocmoAz6xH2VHKVvjGGRUeJMci7AyKIMWTK9OLvw=="
+  "resolved" "https://registry.npmjs.org/vue2-progress-bar/-/vue2-progress-bar-0.1.1.tgz"
+  "version" "0.1.1"
+  dependencies:
+    "core-js" "^3.6.5"
+    "vue" "^2.6.11"
+
 "watchpack-chokidar2@^2.0.1":
   "integrity" "sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww=="
   "resolved" "https://registry.npmjs.org/watchpack-chokidar2/-/watchpack-chokidar2-2.0.1.tgz"
