@@ -81,7 +81,7 @@ export default {
         { title: "HTML", percentage: 80 },
         { title: "CSS", percentage: 70 },
         { title: "JavaScript", percentage: 80 },
-        { title: "Vue", percentage: 80 },
+        { title: "VueJs", percentage: 80 },
         { title: "React", percentage: 40 },
         { title: "TailWind CSS", percentage: 60 },
         { title: "NodeJs", percentage: 50 },
