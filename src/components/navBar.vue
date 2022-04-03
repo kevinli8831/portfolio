@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center sm:justify-end px-5 sm:px-10 py-5 fixed top-0.5 w-full mx-auto"
+    class="flex justify-center sm:justify-end px-5 sm:px-10 py-5 top-2 fixed bg-[#071425] mx-auto"
   >
     <div class="sm:space-x-10 space-x-2">
       <a
@@ -9,20 +9,23 @@
       >
         About</a
       >
-      <span
+      <a
+        href="#Exp"
         class="hover:textOrange hover:border-b hover:border-colorOrange cursor-pointer"
       >
-        Experience</span
+        Experience</a
       >
-      <span
+      <a
+        href="#Work"
         class="hover:textOrange hover:border-b hover:border-colorOrange cursor-pointer"
       >
-        Work</span
+        Work</a
       >
-      <span
+      <a
+        href="#Contact"
         class="hover:textOrange hover:border-b hover:border-colorOrange cursor-pointer"
       >
-        Contact</span
+        Contact</a
       >
     </div>
   </div>

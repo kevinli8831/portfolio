@@ -4,7 +4,8 @@
     <div class="container mx-auto px-5">
       <Intro></Intro>
       <AboutMe></AboutMe>
-      <Experience/>
+      <Experience />
+      <Work />
     </div>
   </div>
 </template>
@@ -14,10 +15,12 @@ import NavBar from "@/components/navBar";
 import Intro from "./components/Intro";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
+import Work from "@/components/Work";
 
 export default {
   name: "App",
   components: {
+    Work,
     Experience,
     AboutMe,
     Intro,

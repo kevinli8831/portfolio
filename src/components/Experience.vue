@@ -1,6 +1,6 @@
 <template>
   <div
-    class="wow fadeInRight max-w-[1000px] mx-auto pt-24 pb-24"
+    class="wow fadeInLeft max-w-[1000px] mx-auto pt-24 pb-24"
     data-wow-offset="100"
     id="Exp"
   >
@@ -21,8 +21,8 @@
             {{ item.jobTitle }}
           </div>
         </div>
-        <transition name="slide-fade" mode="out-in">
-          <div v-if="isSelected === `Fletrix`">
+        <transition name="fade" mode="out-in">
+          <div v-if="isSelected === `Fletrix`" :key="`Fletrix`">
             <span class="text-xl"> Front End Developer (Intern) </span>
             <span class="textOrange text-xl"> @ Fletrix </span>
             <div class="text-[#868686]">Jun 2020 - March 2022</div>
@@ -60,7 +60,7 @@
               </ul>
             </div>
           </div>
-          <div v-if="isSelected !== `Fletrix`">
+          <div v-if="isSelected !== `Fletrix`" :key="`!Fletrix`">
             <span class="text-xl">Student Helper </span>
             <span class="textOrange text-xl"> @ Polyu Speed </span>
             <div class="text-[#868686]">Jan - July 2021</div>
@@ -156,20 +156,9 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
-}
-.slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter, .slide-fade-leave-to
-  /* .slide-fade-leave-active for below version 2.1.8 */ {
-  transform: translateX(10px);
   opacity: 0;
 }
 </style>
