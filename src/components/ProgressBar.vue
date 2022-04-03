@@ -2,10 +2,10 @@
   <div class="flex w-full">
     <div class="relative z-0 bg-gray-600 w-full">
       <div
-        class="bg-[#55BF9A] z-10 transition-all ease-in-out"
+        class="bg-colorOrange z-10 transition-all ease-in-out"
         :style="{ width: percentage + `%` }"
       >
-        <div class="w-[110px] flex justify-center bg-[#4F9D78] z-20">
+        <div class="w-[110px] flex justify-center bg-[#B44C02] z-20">
           {{ title }}
         </div>
         <div class="absolute top-0 right-3">{{ percentage }}%</div>

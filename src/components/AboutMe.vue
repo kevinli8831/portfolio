@@ -1,10 +1,10 @@
 <template>
   <div
-    class="wow bounceInLeft max-w-[1000px] mx-auto mb-24"
+    class="wow fadeInLeft max-w-[1000px] mx-auto pt-24 pb-24"
     data-wow-offset="100"
     id="about"
   >
-    <div class="text-[#60FFD9] text-4xl mb-24">About Me</div>
+    <div class="textOrange text-4xl mb-24">About Me</div>
     <div class="flex flex-wrap flex-row">
       <div
         v-for="(item, index) in list"
@@ -12,7 +12,7 @@
         class="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4 mb-10 px-2"
       >
         <span
-          class="material-icons-outlined !text-[120px] border border-[#60FFD9] rounded-xl p-5 mb-5"
+          class="material-icons-outlined !text-[120px] border border-colorOrange rounded-xl p-5 mb-5"
         >
           {{ item.icon }}
         </span>
