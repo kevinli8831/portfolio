@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      colors: { colorOrange: "#FD6A02" },
+      colors: { colorOrange: "#8E09FF" },
     },
   },
   variants: {

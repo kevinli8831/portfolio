@@ -1,11 +1,12 @@
 <template>
   <div
-    class="wow bounceInDown min-h-[100vh] flex items-start justify-center flex-col max-w-[1000px] mx-auto space-y-10"
+    data-wow-duration="1s"
+    class="wow rollIn min-h-[100vh] flex items-start justify-center flex-col max-w-[1000px] mx-auto space-y-10"
   >
     <div class="textOrange">Hi, my name is</div>
     <div class="text-3xl sm:text-7xl">Li Wai Kiu , Kevin Li</div>
     <div class="text-3xl sm:text-7xl text-[#868686]">Front End Developer</div>
-    <div class="text-lg text-[#868686] max-w-[600px]">
+    <div class="text-lg text-[#868686] max-w-[600px]" style="line-height: 35px">
       I'm a programmer who specializes in front-end development. At the moment,
       I'm concentrating on Vue.js and React.
     </div>

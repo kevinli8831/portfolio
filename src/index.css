@@ -5,7 +5,7 @@
 @layer components {
     /* This won't be included in your compiled CSS unless you actually use it */
     .textOrange {
-        color:#FD6A02 ;
+        color:#8E09FF ;
         /* ... */
     }
 }

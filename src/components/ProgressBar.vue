@@ -1,15 +1,10 @@
 <template>
   <div class="flex w-full">
-    <div class="relative z-0 bg-gray-600 w-full">
-      <div
-        class="bg-colorOrange z-10 transition-all ease-in-out"
-        :style="{ width: percentage + `%` }"
-      >
-        <div class="w-[110px] flex justify-center bg-[#B44C02] z-20">
-          {{ title }}
-        </div>
-        <div class="absolute top-0 right-3">{{ percentage }}%</div>
-      </div>
+    <div class="bg-[#5A17B1] pl-5" :style="{ width: percentage + `%` }">
+      {{ title }}
+    </div>
+    <div class="bg-gray-600 flex-grow">
+      <div class="text-right pr-5">{{ percentage }}%</div>
     </div>
   </div>
 </template>

@@ -2,10 +2,11 @@
   <div
     class="wow fadeInLeft max-w-[1000px] mx-auto pt-24 pb-24"
     data-wow-offset="100"
+    data-wow-duration="1.5s"
     id="Exp"
   >
-    <div class="textOrange text-4xl mb-24">Work Experience</div>
-    <div class="flex flex-wrap sm:flex-nowrap gap-5">
+    <div class="textOrange text-4xl mb-24 font-bold">Work Experience</div>
+    <div class="flex flex-wrap sm:flex-nowrap gap-16">
       <div class="w-full sm:w-2/3">
         <div class="flex">
           <div
@@ -16,13 +17,17 @@
             @click="isSelected = item.jobTitle"
             v-for="(item, i) in infoList"
             :key="`infoList${i}`"
-            class="w-1/2 flex flex-row flex-grow text-center border-colorOrange p-[10px] mb-10 cursor-pointer"
+            class="w-1/2 flex flex-row flex-grow border-colorOrange p-[10px] mb-10 cursor-pointer font-bold justify-center text-2xl"
           >
             {{ item.jobTitle }}
           </div>
         </div>
         <transition name="fade" mode="out-in">
-          <div v-if="isSelected === `Fletrix`" :key="`Fletrix`">
+          <div
+            v-if="isSelected === `Fletrix`"
+            :key="`Fletrix`"
+            class="space-y-5"
+          >
             <span class="text-xl"> Front End Developer (Intern) </span>
             <span class="textOrange text-xl"> @ Fletrix </span>
             <div class="text-[#868686]">Jun 2020 - March 2022</div>
@@ -60,7 +65,11 @@
               </ul>
             </div>
           </div>
-          <div v-if="isSelected !== `Fletrix`" :key="`!Fletrix`">
+          <div
+            v-if="isSelected !== `Fletrix`"
+            :key="`!Fletrix`"
+            class="space-y-5"
+          >
             <span class="text-xl">Student Helper </span>
             <span class="textOrange text-xl"> @ Polyu Speed </span>
             <div class="text-[#868686]">Jan - July 2021</div>

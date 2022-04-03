@@ -2,9 +2,10 @@
   <div
     class="wow fadeInLeft max-w-[1000px] mx-auto pt-24 pb-24"
     data-wow-offset="100"
+    data-wow-duration="1.5s"
     id="about"
   >
-    <div class="textOrange text-4xl mb-24">About Me</div>
+    <div class="textOrange text-4xl mb-24 font-bold">About Me</div>
     <div class="flex flex-wrap flex-row">
       <div
         v-for="(item, index) in list"
@@ -16,7 +17,7 @@
         >
           {{ item.icon }}
         </span>
-        <span class="text-2xl mb-2">
+        <span class="text-2xl mb-2 font-bold">
           {{ item.title }}
         </span>
         <span class="px-3 text-center">
@@ -30,23 +31,27 @@
       I work as a Front-End Developer in Hong Kong. I'm regarding effective
       animations and creating dynamic user experiences.
     </p>
+    <br />
     <p>
       I have a BSc (Hons) in Applied Sciences (Information Systems and Web
       Technologies) from The Hong Kong Polytechnic University's School of
       Professional Education and Executive Development.
     </p>
+    <br />
     <p>
       During my time at university, I had many opportunities from various IT
       companies and gained some work experience from them. In addition, I became
       a well-organized person, a problem solver, an independent employee with a
       keen eye for detail.
     </p>
+    <br />
     <p>
       I am proficient with a wide range of tools. I'll usually be digging into
       Vue, architecting CSS in and out of JavaScript, or orchestrating slick
       animations with Animate.css. I am also interested in the entire frontend
       spectrum and working on ambitious projects with like-minded people.
     </p>
+    <br />
     <p>I eagerly await the opportunity to meet with you!</p>
   </div>
 </template>

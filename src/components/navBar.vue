@@ -19,7 +19,7 @@
         href="#Work"
         class="hover:textOrange hover:border-b hover:border-colorOrange cursor-pointer"
       >
-        Work</a
+        Project</a
       >
       <a
         href="#Contact"

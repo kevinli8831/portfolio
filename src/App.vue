@@ -6,6 +6,7 @@
       <AboutMe></AboutMe>
       <Experience />
       <Work />
+      <contact />
     </div>
   </div>
 </template>
@@ -16,10 +17,12 @@ import Intro from "./components/Intro";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
+import Contact from "@/components/Contact";
 
 export default {
   name: "App",
   components: {
+    Contact,
     Work,
     Experience,
     AboutMe,
