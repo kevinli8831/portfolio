@@ -1,10 +1,10 @@
 <template>
   <div
-    class="wow flipInX max-w-[1000px] mx-auto"
+    class="wow fadeInLeft max-w-[1000px] mx-auto pt-24 pb-24"
     data-wow-offset="100"
     id="about"
   >
-    <div class="text-[#60FFD9] text-4xl mb-24">About Me</div>
+    <div class="textOrange text-4xl mb-24">About Me</div>
     <div class="flex flex-wrap flex-row">
       <div
         v-for="(item, index) in list"
@@ -12,7 +12,7 @@
         class="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4 mb-10 px-2"
       >
         <span
-          class="material-icons-outlined !text-[120px] border border-[#60FFD9] rounded-xl p-5"
+          class="material-icons-outlined !text-[120px] border border-colorOrange rounded-xl p-5 mb-5"
         >
           {{ item.icon }}
         </span>
@@ -23,26 +23,39 @@
           {{ item.text }}
         </span>
       </div>
-      <ProgressBar
-        class="mb-5"
-        v-for="(item, i) in progressList"
-        :key="`progress${i}`"
-        :title="item.title"
-        :percentage="item.percentage"
-      />
+
       <!-- Filled -->
     </div>
+    <p>
+      I work as a Front-End Developer in Hong Kong. I'm regarding effective
+      animations and creating dynamic user experiences.
+    </p>
+    <p>
+      I have a BSc (Hons) in Applied Sciences (Information Systems and Web
+      Technologies) from The Hong Kong Polytechnic University's School of
+      Professional Education and Executive Development.
+    </p>
+    <p>
+      During my time at university, I had many opportunities from various IT
+      companies and gained some work experience from them. In addition, I became
+      a well-organized person, a problem solver, an independent employee with a
+      keen eye for detail.
+    </p>
+    <p>
+      I am proficient with a wide range of tools. I'll usually be digging into
+      Vue, architecting CSS in and out of JavaScript, or orchestrating slick
+      animations with Animate.css. I am also interested in the entire frontend
+      spectrum and working on ambitious projects with like-minded people.
+    </p>
+    <p>I eagerly await the opportunity to meet with you!</p>
   </div>
 </template>
 
 <script>
 import { WOW } from "wowjs";
-import ProgressBar from "@/components/ProgressBar";
 export default {
   name: "AboutMe",
-  components: {
-    ProgressBar,
-  },
+  components: {},
   mounted() {
     const wow = new WOW({
       // 距离可视区域多少开始执行动画
@@ -87,21 +100,15 @@ export default {
         { title: "NodeJs", percentage: 50 },
         { title: "Express", percentage: 40 },
         { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
-        { title: "MongoDB", percentage: 35 },
       ],
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+p {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+</style>
