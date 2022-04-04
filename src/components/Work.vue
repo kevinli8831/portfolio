@@ -7,7 +7,8 @@
   >
     <div class="textOrange text-4xl mb-24 font-bold">Project</div>
     <div
-      class="flex flex-row flex-wrap lg:flex-nowrap gap-10 mb-10"
+      style="gap: 40px"
+      class="flex flex-row flex-wrap lg:flex-nowrap mb-10"
       v-for="(item, index) in contentList"
       :key="`content${index}`"
     >

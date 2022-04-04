@@ -19,7 +19,7 @@
         </transition>
       </div>
       <div id="tag">
-        <div class="flex items-center gap-2 flex-wrap">
+        <div style="gap: 8px" class="flex items-center flex-wrap">
           <span class="material-icons-outlined"> tag </span>
           <span
             class="bg-[#5A17B1] p-2 rounded-full min-w-[60px] text-center"

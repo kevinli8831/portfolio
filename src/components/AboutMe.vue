@@ -13,7 +13,7 @@
         class="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4 mb-10 px-2"
       >
         <span
-          class="material-icons-outlined !text-[120px] border border-colorOrange rounded-xl p-5 mb-5"
+          class="material-icons-outlined !text-[120px] border-4 border-colorOrange rounded-xl p-5 mb-5"
         >
           {{ item.icon }}
         </span>
@@ -75,12 +75,12 @@ export default {
     return {
       list: [
         {
-          title: "Fast",
+          title: "High-Speeed",
           text: "My top priority is fast load times and lag-free interaction.",
           icon: "rocket",
         },
         {
-          text: "Websites don't have to be static; I adore animating them to bring them to life.",
+          text: "Websites don't have to be static, I adore animating them to bring them to life.",
           icon: "dynamic_feed",
           title: "Dynamic",
         },

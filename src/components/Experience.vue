@@ -6,7 +6,7 @@
     id="Exp"
   >
     <div class="textOrange text-4xl mb-24 font-bold">Work Experience</div>
-    <div class="flex flex-wrap sm:flex-nowrap gap-16">
+    <div class="flex flex-wrap sm:flex-nowrap" style="gap: 64px">
       <div class="w-full sm:w-2/3">
         <div class="flex">
           <div
