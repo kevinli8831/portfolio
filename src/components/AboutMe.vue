@@ -75,7 +75,7 @@ export default {
     return {
       list: [
         {
-          title: "High-Speeed",
+          title: "High-Speed",
           text: "My top priority is fast load times and lag-free interaction.",
           icon: "rocket",
         },
