@@ -66,26 +66,36 @@
             </div>
           </div>
           <div
-            v-if="isSelected !== `Fletrix`"
-            :key="`!Fletrix`"
+            v-if="isSelected === `Infinite Financial Solutions`"
+            :key="`Infinite Financial Solutions`"
             class="space-y-5"
           >
-            <span class="text-xl">Student Helper </span>
-            <span class="textOrange text-xl"> @ Polyu Speed </span>
-            <div class="text-[#868686]">Jan - July 2021</div>
+            <span class="text-xl">Programmer </span>
+            <span class="textOrange text-xl"> @ Infinite Financial Solution ltd </span>
+            <div class="text-[#868686]">August 2022 - Now</div>
             <div>
               <ul class="list-disc list-inside space-y-5">
                 <li>
-                  Developed a website For
-                  <span class="textOrange"> RCADMM Project</span>
+                  IFS has provided professionals with IT service consultancy, business process re-engineering and system solutions to companies especially in the bank and financial sectors
 
                   in Speed.
                 </li>
                 <li>
-                  Primarily Using <span class="textOrange">HTML</span>,
-                  <span class="textOrange">CSS</span>,
-                  <span class="textOrange">JavaScript</span>,
-                  <span class="textOrange">Bootstrap</span>.
+                  Using
+                  <span class="textOrange">ReactJs</span>
+                  for FrontEnd
+                </li>
+                <li>
+                  Using
+                  <span class="textOrange">Spring Boot and Java</span>
+                  for BackEnd
+                </li>
+                <li>
+                  Primarily Using <span class="textOrange">Spring Boot</span>,
+                  <span class="textOrange">Java</span>,
+                  <span class="textOrange">React</span>,
+                  <span class="textOrange">Liquibase</span>.
+                  <span class="textOrange">MySQL</span>.
                 </li>
               </ul>
             </div>
@@ -144,19 +154,25 @@ export default {
   data() {
     return {
       progressList: [
-        { title: "HTML", percentage: 80 },
-        { title: "CSS", percentage: 70 },
+        { title: "Spring Boot", percentage: 80 },
+        { title: "Java", percentage: 80 },
+        { title: "React", percentage: 90 },
+        { title: "MySQL", percentage: 70 },
+        { title: "TypeScript", percentage: 80 },
         { title: "JavaScript", percentage: 80 },
-        { title: "VueJs", percentage: 80 },
-        { title: "React", percentage: 40 },
-        { title: "TailWind CSS", percentage: 60 },
+        { title: "CSS", percentage: 70 },
+        { title: "TailWind CSS", percentage: 70 },
+        { title: "VueJs", percentage: 70 },
+        { title: "NextJs", percentage: 50 },
         { title: "NodeJs", percentage: 50 },
+        { title: "NestJs", percentage: 50 },
         { title: "Express", percentage: 40 },
         { title: "MongoDB", percentage: 35 },
+        { title: "Supabase", percentage: 35 },
       ],
 
-      infoList: [{ jobTitle: "Fletrix" }, { jobTitle: "Speed Student Helper" }],
-      isSelected: "Fletrix",
+      infoList: [{ jobTitle: "Infinite Financial Solutions" },{ jobTitle: "Fletrix" }],
+      isSelected: "Infinite Financial Solutions",
     };
   },
 };
