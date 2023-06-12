@@ -24,12 +24,15 @@
           {{ item.text }}
         </span>
       </div>
-
+<!--  -->
       <!-- Filled -->
     </div>
     <p>
-      I work as a Front-End Developer in Hong Kong. I'm regarding effective
-      animations and creating dynamic user experiences.
+      Hello, I'm Kevin Li, a seasoned programmer with extensive experience in both front-end and back-end development. My expertise in front-end technologies includes React.js, Vue.js, and Next.js, while my proficiency in back-end technologies spans Express.js, Nest.js, Spring Boot, and Java.
+    </p>
+    <br />
+    <p>
+      I have also worked with a variety of databases, including MongoDB and MySQL. In addition, I am well-versed in version control using Git and GitLab. With my diverse skill set and experience, I am confident in my ability to design, develop, and deploy high-quality applications that meet the needs of clients and end-users alike. I am passionate about programming and constantly seek to push the boundaries of what is possible with technology.
     </p>
     <br />
     <p>

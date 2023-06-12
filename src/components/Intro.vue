@@ -5,10 +5,9 @@
   >
     <div class="textOrange">Hi, my name is</div>
     <div class="text-3xl sm:text-7xl">Li Wai Kiu , Kevin Li</div>
-    <div class="text-3xl sm:text-7xl text-[#868686]">Front End Developer</div>
+    <div class="text-3xl sm:text-7xl text-[#868686]">Full Stack Developer</div>
     <div class="text-lg text-[#868686] max-w-[600px]" style="line-height: 35px">
-      I'm a programmer who specializes in front-end development. At the moment,
-      I'm concentrating on Vue.js and React.
+      I am a programmer with expertise in a range of programming languages and frameworks. On the front-end, I am skilled in using React.js, Vue.js, and Next.js, while on the back-end, I have experience with Express.js, Nest.js, Spring Boot, and Java. I have also worked with databases such as MongoDB and MySQL, and I am proficient in using Git and GitLab for version control.
     </div>
   </div>
 </template>
